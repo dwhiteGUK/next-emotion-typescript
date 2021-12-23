@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - npm install -g serverless@2.69.1
+      - npm install
+  build:
+    commands:
+      - export NODE_OPTIONS="--max_old_space_size=2000"
+      - serverless --debug
