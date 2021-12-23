@@ -1,0 +1,7 @@
+nextEmotionTypescript:
+  component: "@sls-next/serverless-component@3.6.0"
+  inputs:
+    useServerlessTraceTarget: true
+    bucketName: "next-emotion-typescript"
+    bucketRegion: "eu-west-2"
+    roleArn: "arn:aws:iam::324955271552:user/poc-strapi-frontend"
