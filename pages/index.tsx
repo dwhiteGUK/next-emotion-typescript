@@ -1,6 +1,6 @@
 import tw from 'twin.macro'
 import { Button, Logo } from '../components'
-import { MyGentingApp } from '../components/organisms/my-genting-app'
+import { MyGentingApp } from '@/organisms/my-genting-app'
 
 const styles = {
   // Move long class sets out of jsx to keep it scannable

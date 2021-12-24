@@ -1,38 +1,38 @@
 {
-  "baseUrl": ".",
-  "paths": {
-    "@/atoms/*": [
-      "components/atoms/*"
-    ],
-    "@/components/*": [
-      "components/*"
-    ],
-    "@/contexts/*": [
-      "contexts/*"
-    ],
-    "@/data/*": [
-      "data/*"
-    ],
-    "@/hooks/*": [
-      "hooks/*"
-    ],
-    "@/lib/*": [
-      "lib/*"
-    ],
-    "@/molecules/*": [
-      "components/molecules/*"
-    ],
-    "@/organisms/*": [
-      "components/organisms/*"
-    ],
-    "@/styles/*": [
-      "styles/*"
-    ],
-    "@/types/*": [
-      "types/*"
-    ]
-  },   
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/atoms/*": [
+        "components/atoms/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/contexts/*": [
+        "contexts/*"
+      ],
+      "@/data/*": [
+        "data/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/molecules/*": [
+        "components/molecules/*"
+      ],
+      "@/organisms/*": [
+        "components/organisms/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
+      ],
+      "@/types/*": [
+        "types/*"
+      ]
+    },   
     "target": "es5",
     "lib": [
       "dom",
