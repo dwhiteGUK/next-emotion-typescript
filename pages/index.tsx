@@ -1,6 +1,7 @@
 import tw from 'twin.macro'
 import { Button, Logo } from '../components'
 
+import { Header } from '@/organisms/header'
 import { SeoHead } from '@/atoms/seo-head'
 import { MyGentingApp } from '@/organisms/my-genting-app'
 
@@ -9,7 +10,7 @@ const data = {"id":1,"slug":"about-genting-uk","page_title":"Who We Are","publis
 const styles = {
   // Move long class sets out of jsx to keep it scannable
   container: ({ hasBackground }: { hasBackground: boolean }) => [
-    tw`flex flex-col items-center justify-center h-screen`,
+    tw`flex flex-col`,
     hasBackground && tw`bg-gradient-to-b from-electric to-ribbon`,
   ],
 }
@@ -17,7 +18,7 @@ const styles = {
 const { page_title, page_meta, content_zone } = data
 
 const App = () => (
-  <div>
+  <div css={styles.container({ hasBackground: true })}>
 
     <SeoHead
       seo_title={page_meta?.seo_title || page_title}
@@ -30,6 +31,7 @@ const App = () => (
       /* @ts-ignore */
       share_image={page_meta?.social_share?.share_image}
     />    
+    <Header />
     <div tw="flex flex-col justify-center h-full gap-y-5">
       <Button variant="primary">Submit</Button>
       <Button variant="secondary">Cancel</Button>
