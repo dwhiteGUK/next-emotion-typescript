@@ -1,4 +1,37 @@
 {
+  "baseUrl": ".",
+  "paths": {
+    "@/atoms/*": [
+      "components/atoms/*"
+    ],
+    "@/components/*": [
+      "components/*"
+    ],
+    "@/contexts/*": [
+      "contexts/*"
+    ],
+    "@/data/*": [
+      "data/*"
+    ],
+    "@/hooks/*": [
+      "hooks/*"
+    ],
+    "@/lib/*": [
+      "lib/*"
+    ],
+    "@/molecules/*": [
+      "components/molecules/*"
+    ],
+    "@/organisms/*": [
+      "components/organisms/*"
+    ],
+    "@/styles/*": [
+      "styles/*"
+    ],
+    "@/types/*": [
+      "types/*"
+    ]
+  },   
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -29,5 +62,5 @@
   ],
   "types": [
     "types"
-  ]
+  ], 
 }

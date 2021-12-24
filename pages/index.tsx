@@ -1,13 +1,14 @@
 import tw from 'twin.macro'
 import { Button, Logo } from '../components'
+import { MyGentingApp } from '../components/organisms/my-genting-app'
 
-// const styles = {
-//   // Move long class sets out of jsx to keep it scannable
-//   container: ({ hasBackground }: { hasBackground: boolean }) => [
-//     tw`flex flex-col items-center justify-center h-screen`,
-//     hasBackground && tw`bg-gradient-to-b from-electric to-ribbon`,
-//   ],
-// }
+const styles = {
+  // Move long class sets out of jsx to keep it scannable
+  container: ({ hasBackground }: { hasBackground: boolean }) => [
+    tw`flex flex-col items-center justify-center h-screen`,
+    hasBackground && tw`bg-gradient-to-b from-electric to-ribbon`,
+  ],
+}
 
 const App = () => (
   <div>
@@ -17,6 +18,8 @@ const App = () => (
       <Button isSmall>Close</Button>
     </div>
     <Logo />
+
+    <MyGentingApp />
   </div>
 )
 
