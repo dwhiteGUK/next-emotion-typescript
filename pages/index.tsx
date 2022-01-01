@@ -44,4 +44,20 @@ const App = () => (
 )
 
 
+export async function getStaticProps() {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+
+  /* @ts-ignore */
+  const res = await fetch('https://gnt-uk-prd-strapi-ecs-alb-628847037.eu-west-2.elb.amazonaws.com/pages?slug=about-genting-uk')
+
+  const json = await res.json()
+  
+  console.log('🚀 ~ file: index.tsx ~ line 50 ~ getStaticProps ~ res', res)
+  console.log('🚀 ~ file: index.tsx ~ line 52 ~ getStaticProps ~ json', json)
+
+  return {
+    props: { data: json }
+  }
+}
+
 export default App
