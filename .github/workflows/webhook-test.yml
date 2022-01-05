@@ -2,7 +2,7 @@ name: Rebuild website
 
 on:
   # Allows external webhook trigger
-  repository_dispatch:
+  workflow_dispatch:
     types:
       - webhook
 jobs:
