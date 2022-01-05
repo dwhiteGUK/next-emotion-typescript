@@ -2,9 +2,10 @@ name: Rebuild website
 
 on:
   # Allows external webhook trigger
-  workflow_dispatch:
+  repository_dispatch:
     types:
       - webhook
+
 jobs:
   frontEndBuild:
     runs-on: ubuntu-latest
